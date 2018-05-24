@@ -13,7 +13,7 @@ Name=WhatsApp
 Comment=WhatsApp messenger
 
 # The path to the folder in which the executable is run
-Path=/opt/WhatsApp
+Path=/opt/WhatsApp-linux-x64
 
 # The executable of the application, possibly with arguments.
 Exec=WhatsApp

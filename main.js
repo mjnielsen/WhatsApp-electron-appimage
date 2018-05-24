@@ -21,7 +21,7 @@ function createWindow () {
   mainWindow.setMenu(null);
 
   // and load the index.html of the app.
-  mainWindow.loadURL('https://my.1password.com/')
+  mainWindow.loadURL('https://web.whatsapp.com/')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

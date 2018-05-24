@@ -1,13 +1,13 @@
 {
-  "name": "1Password",
-  "version": "0.1.0",
-  "description": "1Password",
+  "name": "WhatsApp",
+  "version": "1.0.0",
+  "description": "WhatsApp",
   "main": "main.js",
   "devDependencies": {
     "electron": "^1.8.6",
     "electron-packager": "^12.0.2"
   },
   "scripts": {
-    "package-linux": "electron-packager . 1Password --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+    "package-linux": "electron-packager . WhatsApp --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/256x256.png --prune=true --out=release_builds"
   }
 }

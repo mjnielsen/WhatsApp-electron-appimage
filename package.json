@@ -8,6 +8,17 @@
     "electron-packager": "^12.0.2"
   },
   "scripts": {
+    "start": "electron .",
     "package-linux": "electron-packager . WhatsApp --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/png/256x256.png --prune=true --out=release_builds"
+  },
+  "build": {
+    "linux": {
+      "target": [
+        "dir"
+      ]
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

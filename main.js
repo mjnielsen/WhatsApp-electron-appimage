@@ -1,8 +1,7 @@
 const electron = require('electron')
-// Module to control application life.
 const app = electron.app
-// Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
+const shell = electron.shell
 
 const path = require('path')
 const url = require('url')
@@ -16,7 +15,10 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 800,
-    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
+    webPreferences: {
+      nodeIntegration: false
+    }
   })
   mainWindow.setMenu(null);
 
@@ -24,7 +26,13 @@ function createWindow () {
   mainWindow.loadURL('https://web.whatsapp.com/')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
+
+  // Open external links in a new window
+  mainWindow.webContents.on('new-window', (e, url, frame, tab) => {
+      e.preventDefault()
+      shell.openExternal(url)
+  })
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -46,14 +54,6 @@ app.on('window-all-closed', function () {
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {
     app.quit()
-  }
-})
-
-app.on('activate', function () {
-  // On OS X it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) {
-    createWindow()
   }
 })
 

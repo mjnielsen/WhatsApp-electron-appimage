@@ -1,6 +1,6 @@
 # WhatsApp - Electron version
 
-Requires `npm`, `gconf/libgconf`
+Requires `npm`, `gconf/libgconf`, and `xdg-utils` (on Arch, whatever package provides xdg-open on other distros)
 
 To build and install, run:
 

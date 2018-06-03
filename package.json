@@ -13,10 +13,13 @@
       "target": "AppImage",
       "icon": "assets/icons/png/",
       "executableName": "WhatsApp",
-      "category": "Application;Network"
+      "category": "Application;Network",
+      "desktop": {
+        "StartupWMClass": "WhatsApp"
+      }
     },
     "appImage": {
-      "systemIntegration": "doNotAsk"
+      "systemIntegration": "ask"
     }
   },
   "repository": "git@github.com:mjnielsen/WhatsApp-electron-appimage.git",

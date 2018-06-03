@@ -12,7 +12,8 @@
     "linux": {
       "target": "AppImage",
       "icon": "assets/icons/png/",
-      "executableName": "WhatsApp"
+      "executableName": "WhatsApp",
+      "category": "X-Internet"
     },
     "appImage": {
       "systemIntegration": "doNotAsk"

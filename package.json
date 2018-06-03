@@ -13,7 +13,7 @@
       "target": "AppImage",
       "icon": "assets/icons/png/",
       "executableName": "WhatsApp",
-      "category": "X-Internet"
+      "category": "Application;Network"
     },
     "appImage": {
       "systemIntegration": "doNotAsk"

@@ -2,19 +2,26 @@
   "name": "WhatsApp",
   "version": "1.0.0",
   "description": "A WhatsApp AppImage",
+  "author": "Michael Nielsen <m@mjnielsen.org>",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "build": {
     "linux": {
       "target": "AppImage",
       "icon": "assets/icons/png/",
-      "category": "Internet",
       "executableName": "WhatsApp"
     },
     "appImage": {
       "systemIntegration": "doNotAsk"
     }
+  },
+  "repository": "git@github.com:mjnielsen/WhatsApp-electron-appimage.git",
+  "license": "MIT",
+
+  "devDependencies": {
+    "electron-builder": "20.14.7"
   }
 }

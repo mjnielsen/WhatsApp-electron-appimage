@@ -6,6 +6,4 @@ To build AppImage, run
 ```
 yarn install && yarn build
 ```
-or simply download from [here](https://mjnielsen.org/files/WhatsApp-1.0.0-x86_64.AppImage).
-
-To "install", copy the .AppImage file to a reasonable location (e.g. ~/.appimages) and select "Yes" on the dialog that pops up when you run.
+To install, first install the [AppImage Launcher](https://github.com/TheAssassin/AppImageLauncher), then run the AppImage (dist/WhatsApp-1.0.0.AppImage).

@@ -27,7 +27,7 @@ function createWindow () {
   mainWindow.setMenu(null);
 
   // and load the index.html of the app.
-  mainWindow.loadURL('https://web.whatsapp.com/')
+  mainWindow.loadURL('https://web.whatsapp.com/', {userAgent: 'Mozilla/5.0 (Linux) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'})
 
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
